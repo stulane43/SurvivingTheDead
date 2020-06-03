@@ -51,11 +51,11 @@ const textNodes = [
     img: "",
     options: [
       {
-        text: 'BackStory',
+        text: 'Backstory',
         nextText: 2
       },
       {
-        text: 'Your Mission',
+        text: 'Mission',
         nextText: 3
       },
       {
@@ -75,7 +75,7 @@ const textNodes = [
   {
     id: 2,
     text: "\n\nIt is now 2025 and the world is in shambles. The COVID-19 virus has mutated into what we feared the most... That's right, I'm talking ZOMBIE APOCOLYPSE. Brain eating, never sleeping, always hungry, zombies. \n\nLuckily, the 8 of us were on a winter vacation in Colarado at a remote cabin when the virus breakout occured. We managed to hold out for a few months with the supplies we had, but we are now running low on food and water. The only weapons we have to defend ourselves with are Rob's machete, Sadow's compound bow with 1 arrow, and MacVittie's lucious blonde hair.\n\n In order to survive - We must push forward to the nearest town and collect supplies, but zombies aren't the only thing to fear. The United States Government collapsed after brushing the CoronaVirus off as a mild flu. As a result, teams of ravegers (see what I did there?) are slowly taking over the country, pillaging their way city by city. \n\nIt is a dangerous world out there, but at least we have each other.",
-    img: `
+    img: `Backstory\n\n
 ──▄────▄▄▄▄▄▄▄────▄───
 ─▀▀▄─▄█████████▄─▄▀▀──
 ─────██─▀███▀─██──────
@@ -84,11 +84,11 @@ const textNodes = [
 `,
     options: [
       {
-        text: 'BackStory',
+        text: 'Backstory',
         nextText: 2
       },
       {
-        text: 'Your Mission',
+        text: 'Mission',
         nextText: 3
       },
       {
@@ -108,14 +108,14 @@ const textNodes = [
   {
     id: 3,
     img: "",
-    text: "Survive. \n\nOnce we collect our much needed supplies, we will have a choice to make.\n In fact, our group will face many dillemas along this dangerous journey. \n\nSome decisions will be wise, others may end badly.\n Either way, I wouldn't want to be in this situation with any other team of friends.",
+    text: "Your Mission: Survive. \n\nOnce we collect our much needed supplies, we will have a choice to make.\n In fact, our group will face many dillemas along this dangerous journey. \n\nSome decisions will be wise, others may end badly.\n Either way, I wouldn't want to be in this situation with any other team of friends.",
     options: [
       {
-        text: 'BackStory',
+        text: 'Backstory',
         nextText: 2
       },
       {
-        text: 'Your Mission',
+        text: 'Mission',
         nextText: 3
       },
       {
@@ -135,14 +135,14 @@ const textNodes = [
   {
     id: 4,
     img: "",
-    text: "Supplies Required: \n\nFood and Drink - Anything that will provide sustenance \nNOTE: Matt and Amanda will require vegan food\n\n Weapons - Any item that can be used to defend yourself \n (lucious hair does not count, unfortunately)\n\n Medical Supplies - Jen cut her leg badely in a bicycle accident during our trip and needs antibiotics",
+    text: "Objectives \n\nSupplies Required: \n\nFood and Drink - Anything that will provide sustenance \nNOTE: Matt and Amanda have been starving for some time because they require vegan food\n\n Weapons - Any item that can be used to defend yourself \n (lucious hair does not count, unfortunately)\n\n Medical Supplies - Jen cut her leg badely in a bicycle accident during our trip and needs antibiotics",
     options: [
       {
-        text: 'BackStory',
+        text: 'Backstory',
         nextText: 2
       },
       {
-        text: 'Your Mission',
+        text: 'Mission',
         nextText: 3
       },
       {
@@ -162,14 +162,14 @@ const textNodes = [
   {
     id: 5,
     img: "",
-    text: "Where Do We Start? \nThis is a guided game. You decide your fate and produce answers and the game will guide you throughout your journey\n\n Where is everyone else we know?\n Assume everyone you know and love are safe and sound in Canada. \n Everyone moved out of the country after the US declared COVID-19 as the common cold.\n Canada locked their border and prevented the spread of the virus (for now).\n\n What about money? \n Money is irrelavent and worthless\n\n Can we start over if we make a grave decision after the game begins?\n You may not choose to restart the game. Decide your path wisely.",
+    text: "Frequently Asked Questions\n\nWhere Do We Start? \nThis is a guided game. You decide your fate and the game will guide you throughout your journey\n\n Where is everyone else we know?\n Assume everyone you know and love are safe and sound in Canada. \n Everyone moved out of the country after the US declared COVID-19 as the common cold.\n Canada locked their border and prevented the spread of the virus (for now).\n\n What about money? \n Money is irrelavent and worthless\n\n Can we start over if we make a grave decision after the game begins?\n You may not choose to restart the game. Decide your path wisely.",
     options: [
       {
-        text: 'BackStory',
+        text: 'Backstory',
         nextText: 2
       },
       {
-        text: 'Your Mission',
+        text: 'Mission',
         nextText: 3
       },
       {
@@ -232,7 +232,44 @@ const textNodes = [
     options: [
       {
         text: 'Continue the journey',
+        nextText: 54
+      }
+    ]
+  },
+  {
+    id: 54,
+    img: `
+    ███████████
+       ▌▐█████████
+      ████████████
+      ▀▀▀❍▀▀▀▀▀▀❍▀
+    `,
+    text: "\n\nAs you're walking, you find a main road. Katie spots an abandoned purple mini van on the side of the road. There are no keys, but Matt was able to jump the van and get it started. Do you:",
+    options: [
+      {
+        text: 'Get in the van',
+        nextText: 55
+      },
+      {
+        text: 'Continue on foot',
         nextText: 9
+      }
+    ]
+  },
+  {
+    id: 55,
+    img: `░╔╔╩╩╝░░░░
+    ▄██▄░░░░░░
+    ░░██████▄░
+    ░░█▀█▀█▀█░
+    ░▄▌▄▌▄▌▄▌░
+    `,
+    text: "\n\nAfter driving for a few hours, a buck (That's a male deer if anyone was wondering) comes out onto the road. Matt demolishes the deer with the mini van (Who let Matt drive?)... \n\n The van is now totaled and you have to continue on foot.",
+    options: [
+      {
+        text: 'Continue the journey',
+        setState: { NoGun: true, Gun: false, },
+        nextText: 10
       }
     ]
   },
@@ -243,16 +280,16 @@ const textNodes = [
     ░░▄█████▄░░
     ░▀██┼█X██▀░
     ▄▄███████▄▄`,
-    text: "\n\nA few hours later, you discover another cabin in the woods. It looks deserted and there may be supplies inside. \n\n Rob notices the side window was broken into.",
+    text: "\n\nAfter hours of walking, you discover another cabin in the woods. There may be supplies inside. \n\n Amanda notices that a window is broken...",
     options: [
       {
-        text: 'Look for supplies',
-        setState: { Suppliescollected: true, NoGun: false },
+        text: 'Enter the cabin',
+        setState: { Suppliescollected: true, NoGun: false},
         nextText: 11
       },
       {
-        text: 'Move on',
-        setState: { NoGun: true, Gun: false },
+        text: 'Evade the cabin and move on',
+        setState: { NoGun: true, Gun: false, },
         nextText: 10
       }
     ]
@@ -276,7 +313,7 @@ const textNodes = [
     ░██─▀─██░░█▀█▀▀▀▀█░░█░
     ░███▄███░░▀░▀░░░░░▀▀░░
     `,
-    text: "\n\nThe boys scouted the cabin out and declared it was clear to search. Whoever, or whatever had moved on from the cabin. \n\n Unfortunately, the fridge is locked. Solve this riddle to unlock the door:\n\n  Before this vacation became very scary, there is one item we usually carry. Not all of us had one, it was such a bother. What could it be? I implore you to ponder.",
+    text: "\n\nThe boys scouted the cabin out and declared it was clear to search. Katie spots a cabinet with a lock on it. \n\n Solve this riddle to unlock the door:\n\n  Before this vacation became very scary, there is one item we all used to carry. Not all of us had one, it was such a bother. What could it be? I implore you to ponder.",
     options: [
       {
         text: 'Unlocked door',
@@ -300,7 +337,7 @@ const textNodes = [
 █▒▒▒▒▀▄▄▄▀▒▒▒▒█
 ▀▄▄▄▄▄▄▄▄▄▄▄▄▄▀
                             `,
-    text: "\n\nYou discover antibiotics in the fridge! Jen takes them and feels better already.\n\n You also find enough food for everyone, but none of it is vegan... Looks like Matt and Amanda will stay hungry for now.\n\n Katie also sees a strange picture - Could be a clue?",
+    text: "\n\nYou discover antibiotics in the cabinet! Jen takes them and feels better already.\n\n Katie also sees a strange picture - Could be a clue?",
     options: [
       {
         text: 'Continue the journey',
@@ -334,13 +371,13 @@ const textNodes = [
         text: 'Evade the bear and move on',
         setState: { Bow: true, NoBow: false, NoBoworGun: false },
         nextText: 15
-      }
+      },
     ]
   },
   {
     id: 14,
     img: "",
-    text: "Sadow lines up his first shot and hits the bear in the shoulder. That pissed it off.\n\n It is now charging at the group. \n\n Everyone begins to run, but Bri froze in terror (typical). The bear takes a nice chunk out of Bri's arm. \n\n Rob comes back to save Bri and stabs the bear in the neck with his machete, effectively killing the beast.\n\n Good news: You all have food now (except Matt and Amanda). \n Bad news: Bri is alive, but bleeding pretty bad. \n\n We patch her up the best we can, but we need to get to the hospital in town asap.",
+    text: "Sadow lines up the shot and hits the bear in the shoulder. That pissed it off.\n\n It is now charging at the group. \n\n Everyone begins to run, but Bri froze in terror (typical). The bear takes a nice chunk out of Bri's arm. \n\n Rob comes back to save Bri and stabs the bear in the neck with his machete, effectively killing the beast.\n\n Good news: You all have food now (except Matt and Amanda). \n Bad news: Bri is alive, but bleeding pretty bad. \n\n We patch her up the best we can, but we need to get to the hospital in town asap.",
     options: [
       {
         text: 'Continue the journey',
@@ -372,7 +409,7 @@ const textNodes = [
     text: "\n\nThe day goes by and it is getting dark. \n\n As you are walking by a tree in the forest, Katie discovers a note tagged to a tree... \n\nAs you all are looking at the note, Sadow hears a branch snap in the woods not too far off! You are all trying to read the note, but in a panic you rip it...\n\n Was that noise in the distance Ravegers or the undead? Who cares! Hurry! put the note back together!",
     options: [
       {
-        text: 'Open to view ripped note',
+        text: '(Open to view ripped note)',
         nextText: -1
       },
       {
@@ -520,7 +557,7 @@ const textNodes = [
     
     
     `,
-    text: "\n\nWhile searching the warehouse, Katie spots a safe where the X is located on the map! \n\n The safe is locked, but there is a keypad to unlock it. \n\n Suddenly, zombies begin to emerge from places in the warehouse. Hurry! What is the code to open the safe?n\n\n (You have 30 seconds before you are attacked by zombies)\n\n _ _ _ _ ",
+    text: "\n\nWhile searching the warehouse, Katie spots a safe where the X is located on the map! \n\n The safe is locked, but there is a keypad to unlock it. \n\n Suddenly, zombies begin to emerge from places in the warehouse. Hurry! What is the code to open the safe?\n\n (You have 5 minutes before you are attacked by zombies)\n\n _ _ _ _ ",
     options: [
       {
         text: 'Solved the code',
@@ -563,7 +600,7 @@ const textNodes = [
   {
     id: 23,
     img: "",
-    text: "Well you couldn't figure it out... Maybe we missed something. Oh well, we have to push on. \n\n You finally reach the town. Where should you go?",
+    text: "Well you couldn't figure it out... Maybe we missed something. Oh well, we have to push on. \n\n You finally reach the town.",
     options: [
       {
         text: 'Go to the hospital',
@@ -615,22 +652,22 @@ const textNodes = [
     text: "\n\nDays pass and you finally make it to the hospital.\n\n Matt and Amanda suddenly collapse. They were starving for too long. They hold eachother as they slowly disintegrate away in the darkness. \nMatt and Amanda pass away in each others arms.\n\n As you both mourn your losses, Katie finds a room with plenty of supplies, but the door is locked.\n\n Unlock the door to find supplies!\n\n Riddle: What is a series of numbers that Matt can never get out of his head?",
     options: [
       {
-        text: 'Solved Riddle - Have bow',
+        text: 'Solved Riddle',
         requiredState: (currentState) => currentState.Bow,
         nextText: 32
       },
       {
-        text: 'Solved Riddle - no bow',
+        text: 'Solved Riddle',
         requiredState: (currentState) => currentState.NoBow,
         nextText: 17
       },
       {
-        text: 'Solved Riddle - no bow or gun',
+        text: 'Solved Riddle',
         requiredState: (currentState) => currentState.NoBoworGun,
         nextText: 17
       },
       {
-        text: 'Solved Riddle - bri is dead',
+        text: 'Solved Riddle',
         requiredState: (currentState) => currentState.BriDead,
         nextText: 32
       },
@@ -938,7 +975,7 @@ const textNodes = [
         text: 'Move through time',
         requiredState: (currentState) => currentState.NoGun,
         setState: { NoGun: false, Gun: false, Bow: false, NoBow: false, NoBoworGun: false, GunandBow: false, BriDead: false, Suppliescollected: false},
-        nextText: 9
+        nextText: 54
       },
       {
         text: 'Move through time',
