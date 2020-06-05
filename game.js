@@ -377,7 +377,7 @@ const textNodes = [
   {
     id: 14,
     img: "",
-    text: "Sadow lines up the shot and hits the bear in the shoulder. That pissed it off.\n\n It is now charging at the group. \n\n Everyone begins to run, but Bri froze in terror (typical). The bear takes a nice chunk out of Bri's arm. \n\n Rob comes back to save Bri and stabs the bear in the neck with his machete, effectively killing the beast.\n\n Good news: You all have food now (except Matt and Amanda). \n Bad news: Bri is alive, but bleeding pretty bad. \n\n We patch her up the best we can, but we need to get to the hospital in town asap.",
+    text: "Sadow lines up the shot and hits the bear in the shoulder. That pissed it off.\n\n It is now charging at the group. \n\n Everyone begins to run, but Bri froze in terror (typical). The bear takes a nice chunk out of Bri's arm. \n\n Rob comes back to save Bri and stabs the bear in the neck with his machete, effectively killing the beast.\n\n Good news: You all have food now (except Matt and Amanda). \n Bad news: Bri is alive, but bleeding pretty bad. \n\n We patch her up the best we can, but we need to get to the hospital in town asap.\n\n Note: Matt and Amanda are beginning to starve.",
     options: [
       {
         text: 'Continue the journey',
@@ -389,7 +389,7 @@ const textNodes = [
   {
     id: 15,
     img: "",
-    text: "You sneak past the bear unnoticed.",
+    text: "You sneak past the bear unnoticed.\n\n Note: Matt and Amanda are beginning to starve.",
     options: [
       {
         text: 'Continue the journey',
@@ -513,7 +513,7 @@ const textNodes = [
       {
         text: "Bri isn't looking too good. She has lost a lot of blood. Maybe you should move on to the hospital.",
         requiredState: (currentState) => currentState.NoBow,
-        setState: { NoBow: false, Bow: false, Gun: false, NoGun: false, NoBoworGun: true},
+        setState: { NoBow: false, Bow: false, Gun: false, NoGun: false, NoBoworGun: false, Jensafe: true},
         nextText: 25
       },
       {
@@ -592,7 +592,7 @@ const textNodes = [
       {
         text: "Couldn't figure out the code. Run from zombies and go to town",
         requiredState: (currentState) => currentState.NoBoworGun,
-        setState: { Gun: false, NoGun: false, Bow: false, NoBow: false, NoBoworGun: true, GunandBow: false},
+        setState: { Gun: false, NoGun: false, Bow: false, NoBow: false, NoBoworGun: false, GunandBow: false},
         nextText: 23
       },
     ]
@@ -610,8 +610,7 @@ const textNodes = [
       },
       {
         text: 'Go to the hospital',
-        requiredState: (currentState) => currentState.NoBoworGun,
-        setState: {BriDead: false},
+        requiredState: (currentState) => currentState.BriDead,
         nextText: 25
       },
       {
@@ -668,7 +667,14 @@ const textNodes = [
       },
       {
         text: 'Solved Riddle',
+        requiredState: (currentState) => currentState.Jensafe,
+        setState: { Jensafe: false, NoBoworGun: true },
+        nextText: 60
+      },
+      {
+        text: 'Solved Riddle',
         requiredState: (currentState) => currentState.BriDead,
+        setState: { NoBoworGun: true},
         nextText: 32
       },
       {
@@ -1224,6 +1230,20 @@ const textNodes = [
       {
         text: 'To Be Continued...',
         nextText: 1
+      },
+    ]
+  },
+  {
+    id: 60,
+    img: `────▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀█─█
+    ▀▀▀▀▄─█─█─█─█─█─█──█▀█
+    ─────▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀─▀
+    `,
+    text: "\n\nYou find blood for Bri! She takes them and feels better right away.",
+    options: [
+      {
+        text: 'Continue the journey',
+        nextText: 29
       },
     ]
   },
