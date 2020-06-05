@@ -908,7 +908,7 @@ const textNodes = [
   {
     id: 38,
     img: "",
-    text: "Sadow sits down around a puddle of blood, he remembers he has those mushrooms katie found earlier...",
+    text: "Sadow sits down around a puddle of blood. He then remembers he has those mushrooms katie found earlier...",
     options: [
       {
         text: 'Eat Mushrooms',
@@ -1072,7 +1072,7 @@ const textNodes = [
     ▒▒▒▒▒▒▐▄▄▄▄▄▄▄▌▒▒▒▒▒▒
     ▄▀▀▀█▒▐░▀▀▄▀▀░▌▒█▀▀▀▄
     ▌▌▌▌▐▒▄▌░▄▄▄░▐▄▒▌▐▐▐▐`,
-    text: "\n\nWhile Rob is grutning while taking a poop, a zombie that was hiding in the bedroom hears him. It comes out of the bedrom, sees Katie, and runs viciously for her!",
+    text: "\n\nWhile Rob is grunting while taking a poop, a zombie that was hiding in the bedroom hears him. It comes out of the bedrom, sees Katie, and runs viciously for her!",
     options: [
       {
         text: 'Use gun to kill the zombie',
